@@ -28,11 +28,10 @@ G.addEdge("Anibal", "Stefano");
 G.display();
 
 // run IDDFS algorithm to search "Stefano" from "Leo"
-// G.search("Stefano", "Leo")
 let src = "Barcia", goal = "Stefano";
-let result = G.IDDFS(src, goal);
-console.log(`Existe o no camino de ${src} a ${goal} ->  ${result}`);
+let result = G.IDDFS(src, goal) ? "Si" : "No";
+console.log(`Existe o no camino desde ${src} hasta ${goal} ->  ${result}`);
 
-console.log(`******* CAMINO MAS CORTO ENTRE ${src} Y ${goal} ********`);
+console.log(`\n******* CAMINO MAS CORTO ENTRE ${src} Y ${goal} ********`);
 let ruta = G.shortest_path(src, goal);
 console.log(ruta);
