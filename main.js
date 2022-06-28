@@ -28,7 +28,7 @@ G.addEdge("Anibal", "Stefano");
 G.display();
 
 // run IDDFS algorithm to search "Stefano" from "Leo"
-let src = "Barcia", goal = "Stefano";
+let src = "Tito", goal = "Stefano";
 let result = G.IDDFS(src, goal) ? "Si" : "No";
 console.log(`Existe o no camino desde ${src} hasta ${goal} ->  ${result}`);
 
